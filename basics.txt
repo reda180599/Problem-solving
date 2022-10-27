@@ -1,0 +1,314 @@
+#include<iostream>
+#include<string>
+#include<cmath>
+using namespace std;
+int main() {
+
+	//sheet one 
+
+
+	// problem (A)
+	/*string name;
+	cin >> name;
+	cout << "Hello, " << name << endl;
+	*/
+
+	//problem (B)
+	/*int x; long long y; char c; float z; double u;
+	cin >> x >> y >> c >> z >> u;
+	cout << x <<endl << y <<endl << c <<endl << z <<endl << u <<endl;
+	*/
+	
+
+	//problem (C)
+	/*int x, y;
+	cin >> x >> y;
+	cout << "sum = " << x + y<< endl;
+	*/
+	/*
+	int a, b, c, d;
+	cin >> a >> b >> c >> d;
+	int difference = (a * b) - (c * d);
+	cout << "difference = " << difference << endl;
+	*/
+
+	//problem (D)
+
+	/*int x, y;
+	cin >> x >> y;
+
+	if ( (x % y == 0) | (y % x == 0) )
+		cout << "multiples" << endl;
+	else
+		cout << "not multiples" << endl;
+		*/
+
+	//problem (E)
+	/*int years, months, days;
+	cin >> days;
+
+	years = days / 365;
+
+	months = (days - (years * 365)) / 30;
+
+	days = days - ((years * 365) + (months * 30));
+	cout << "years = " << years << "  months = " << months << "  days = " << days << endl;
+	*/
+
+	//problem (F)
+	/*int n, m;
+	cin >> n >> m;
+	cout << "sum = " << ((n % 10) + (m % 10)) << endl;
+	*/
+
+
+	//proble, (G)
+	/*int n, m;
+	char c;
+	cin >> n >> c >> m;
+	if (c == '=') {
+		if (n == m)
+			cout << "Right" << endl;
+		else
+			cout << "Wrong" << endl;
+	}
+
+	else if (c == '>') {
+		if (n > m)
+			cout << "Right" << endl;
+		else
+			cout << "Wrong" << endl;
+	}
+
+	else {
+		if (n < m)
+			cout << "Right" << endl;
+		else
+			cout << "Wrong" << endl;
+	}
+
+	*/
+
+
+	// problem (K)
+	//for numbers and get max and min
+
+	//int a, b, c, d;
+	//cin >> a >> b >> c >> d;
+	//max using if statement
+	/*int max = a;
+	if ((b > max) && (b > c) && (b > d))
+		max = b;
+	else if ((c > max) && (c > b) && (c > d))
+		max = c;
+	else if ((d > max) && (d > b) && (d > c))
+		max = d;
+
+	cout << "max = " << max << endl;
+
+
+	//min using for loop
+	int arr[4];
+	for (int i = 0; i < 4; i++) {
+		cin >> arr[i];
+	}
+
+	int min = arr[0];
+
+	for (int i = 0; i < 4; i++) {
+		if (min > arr[i])
+			min = arr[i];
+	}
+
+	cout << "min = " << min << endl;
+	*/
+
+	//problem (M)
+	/*string first_name1;
+	string second_name1;
+
+	string first_name2;
+	string second_name2;
+	cout << "Enter first name for the first person : " << endl;
+	cin >> first_name1;
+	cout << "Enter second name for the first person: " << endl;
+	cin >> second_name1;
+
+
+	cout << "Enter first name for the second person : " << endl;
+	cin >> first_name2;
+	cout << "Enter second name for the second person: " << endl;
+	cin >> second_name2;
+
+
+	if (second_name1 == second_name2)
+		cout << "Are brothers" << endl;
+	else
+		cout << "Not brothers " << endl;
+
+		*/
+
+
+	//problem (L) determine if the character is small or capital
+	/*char character;
+	cout << "Enter character please : " << endl;
+	cin >> character;
+
+	int cating = int(character);
+	if (cating >= 65 && cating <= 90)
+		cout << "Capital Character " << endl;
+	else if (cating >= 97 && cating <= 122)
+		cout << "Small Charater" << endl;
+	else
+		cout << "Not a character" << endl;
+	*/
+
+	//problem (M) convert small characters to capital characters
+	
+	//input
+	//char ch1;
+	//cout << "Enter small character please: " << endl;
+	//cin >> ch1;
+	
+	
+	//processing
+	// int(a) = 97 / int(A) = 65  ==>> difference = 32
+	/*if (int(ch1) >= 97 && int(ch1) <= 122) {
+		int temp1;
+		temp1 = int(ch1);
+		temp1 -= 32;
+		char ch2 = char(temp1);
+
+		//output	
+		cout << ch1 << "  <---->  " << ch2 << endl;
+
+	}
+
+	else
+		cout << "Try again" << endl;
+
+		*/
+
+    
+	//problem(U)  sort three numbers
+	/*int x, y, z;
+
+	int min = 0;
+	int min2 = 0;
+	int min3 = 0;
+
+	cout << "Enter three numbers : " << endl;
+	cin >> x >> y >> z;
+
+	//step one -- fint the minimum first
+	if (y < x && y < z)
+		min = y;
+	else if (z < x && z < y)
+		min = z;
+	else
+		min = x;
+
+	//step two
+	if (x == min) {
+		if (y < z) {
+			min2 = y;
+			min3 = z;
+		}
+			
+		else {
+			min2 = z;
+			min3 = y;
+		}
+			
+	}
+	else if (y == min) {
+		if (x < z) {
+			min2 = x;
+			min3 = z;
+		}
+		else {
+			min2 = z;
+			min3 = x;
+		}
+			
+	}
+
+	else {
+		if (x < y) {
+			min2 = x;
+			min3 = y;
+		}
+			
+		else {
+			min2 = y;
+			min3 = x;
+		}
+	}
+
+
+	cout << min << "\t" << min2 << "\t" << min3 << endl;
+
+	*/
+
+
+	//problem (V)
+
+	//input
+	/*int n, m , result;
+	char sign, flag = 'y';
+	bool decision = true;
+
+
+	while (decision == true) {
+		cout << "Enter the expression such as (x + y = 5)  please : " << endl;
+		cin >> n >> sign >> m;
+		cout << "= ";
+		cin >> result;
+
+		//processing
+		if (sign == '+') {
+			if ((n + m) == result)
+				cout << "Yes you are right " << endl;
+			else
+				cout << "you are wrong the right result = " << (n + m) << endl;
+
+		}
+
+		if (sign == '-') {
+			if ((n - m) == result)
+				cout << "Yes you are rigth " << endl;
+			else
+				cout << " you are wrong the right result = " << (n - m) << endl;
+
+		}
+
+		if (sign == '*') {
+			if ((n * m) == result)
+				cout << "Yes you are rigth " << endl;
+			else
+				cout << "you are wrong the right resultt = " << (n * m) << endl;
+
+		}
+
+		cout << "Do you want to continue or not ( y / n)" << endl;
+		cin >> flag;
+		if (flag == 'y')
+			decision = true;
+		else if (flag == 'n')
+			decision = false;
+		else {
+			cout << "Enter valid input  - try again" << endl;
+			break;
+		}
+			
+
+
+	}*/
+
+
+
+	
+
+	system("pause");
+	return 0;
+}
